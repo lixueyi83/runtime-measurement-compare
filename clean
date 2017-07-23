@@ -1,0 +1,11 @@
+#!/bin/bash
+
+rm_obj()
+{
+	for obj in gettime_of_day clock_gettime time times clock runtime_comp; do
+		sudo rm -f $obj
+		sudo rm -f *.o
+	done
+}
+
+rm_obj

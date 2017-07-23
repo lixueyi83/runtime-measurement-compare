@@ -1,0 +1,15 @@
+#!/bin/bash
+
+compile_src()
+{
+	for obj in gettime_of_day clock_gettime time times clock runtime_comp; do
+		sudo gcc -o $obj -lrt $obj.c
+	done
+}
+
+compile_src
+
+
+for file in `ls`; do
+	echo "$file"
+done 
